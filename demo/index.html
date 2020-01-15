@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Guppy JS-SDK</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.staticfile.org/vConsole/3.3.0/vconsole.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Guppy JS-SDK API Test</h1>
+
+      <h2>基础</h2>
+      <section>
+        <button class="btn-primary" onclick="getRef()">getRef</button>
+      </section>
+      <section>
+        <button class="btn-primary" onclick="getRuntimeEnv()">getRuntimeEnv</button>
+      </section>
+      <section>
+        <button class="btn-primary" onclick="getUa()">getUa</button>
+      </section>
+      <section>
+        <button class="btn-primary" onclick="getUrlParams()">getUrlParams</button>
+      </section>
+      <section>
+        <button class="btn-primary" onclick="getUserToken()">getUserToken</button>
+      </section>
+      <section>
+        <button class="btn-primary" onclick="postMessage()">postMessage</button>
+      </section>
+
+      <h2>数据缓存</h2>
+      <section>
+        <button class="btn-primary" onclick="clearStorage()">clearStorage</button>
+      </section>
+      <section>
+        <button class="btn-primary" onclick="getStorage()">getStorage</button>
+      </section>
+      <section>
+        <button class="btn-primary" onclick="removeStorage()">removeStorage</button>
+      </section>
+      <section>
+        <button class="btn-primary" onclick="setStorage()">setStorage</button>
+      </section>
+
+      <h2>界面</h2>
+      <section>
+        <button class="btn-primary" onclick="setTitle()">setTitle</button>
+      </section>
+
+      <h2>位置</h2>
+      <section>
+        <button class="btn-primary" onclick="getLocation()">getLocation</button>
+      </section>
+      <section>
+        <button class="btn-primary" onclick="openLocation()">openLocation</button>
+      </section>
+
+      <h2>路由</h2>
+      <section>
+        <button class="btn-primary" onclick="navigateBack()">navigateBack</button>
+      </section>
+      <section>
+        <button class="btn-primary" onclick="navigateTo()">navigateTo</button>
+      </section>
+      <section>
+        <button class="btn-primary" onclick="redirectTo()">redirectTo</button>
+      </section>
+      <section>
+        <button class="btn-primary" onclick="reLaunch()">reLaunch</button>
+      </section>
+      <section>
+        <button class="btn-primary" onclick="switchTab()">switchTab</button>
+      </section>
+      <section>
+        <button class="btn-primary" onclick="toLogin()">toLogin</button>
+      </section>
+
+      <h2>设备</h2>
+      <section>
+        <button class="btn-primary" onclick="chooseImage()">chooseImage</button>
+      </section>
+      <section>
+        <button class="btn-primary" onclick="getNetworkType()">getNetworkType</button>
+      </section>
+      <section>
+        <button class="btn-primary" onclick="previewImage()">previewImage</button>
+      </section>
+      <section>
+        <button class="btn-primary" onclick="scanCode()">scanCode</button>
+      </section>
+
+      <h2>转发</h2>
+      <section>
+        <button class="btn-primary" onclick="share()">share</button>
+      </section>
+    </div>
+
+    <script>
+      if (navigator.userAgent.indexOf('AlipayClient') > -1) {
+        document.writeln('<script src="https://appx/web-view.min.js"' + '>' + '<' + '/' + 'script>');
+      }
+    </script>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.3.2.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

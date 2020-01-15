@@ -1,0 +1,7 @@
+node_modules
+.project
+.vscode
+.history
+.DS_Store
+\.settings/
+package-lock.json
