@@ -7,6 +7,8 @@ module.exports = {
     path: path.resolve(__dirname, '../dist/'),
     filename: '[name].[hash:8].js',
     chunkFilename: '[name].[hash:8].js',
+    library: 'guppy-jssdk',
+    libraryTarget: 'umd',
     umdNamedDefine: true
   },
   resolve: {

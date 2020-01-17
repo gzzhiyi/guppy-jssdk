@@ -8,7 +8,7 @@ module.exports = merge.smart(basicConfig, {
   mode: 'development',
   entry: {
     index: path.resolve(__dirname, '../src/index'),
-    debug: path.resolve(__dirname, '../src/debug'),
+    debug: path.resolve(__dirname, '../src/debug')
   },
   devtool: 'cheep-module-eval-source-map',
   devServer: {
