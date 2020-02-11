@@ -1,8 +1,8 @@
 import chooseImage from './methods/chooseImage'
 import clearStorage from './methods/clearStorage'
-import getEnv from './methods/getEnv/'
 import getLocation from './methods/getLocation'
 import getNetworkType from './methods/getNetworkType'
+import getRuntimeEnv from './methods/getRuntimeEnv'
 import getStorage from './methods/getStorage'
 import getUrlParams from './methods/getUrlParams/'
 import navigateBack from './methods/navigateBack'
@@ -18,12 +18,12 @@ import setTitle from './methods/setTitle'
 import switchTab from './methods/switchTab'
 
 export const VERSION: string = require('../package.json').version
-export const ENV: object = getEnv()
+export const ENV: object = getRuntimeEnv()
 
 const fn = {
   chooseImage,
   clearStorage,
-  getEnv,
+  getRuntimeEnv,
   getLocation,
   getNetworkType,
   getStorage,
@@ -53,9 +53,9 @@ win.$gy = API
 export {
   chooseImage,
   clearStorage,
-  getEnv,
   getLocation,
   getNetworkType,
+  getRuntimeEnv,
   getStorage,
   getUrlParams,
   navigateBack,

@@ -23,9 +23,9 @@ function getStorage () {
   })
 }
 
-function getUa () {
-  const ua = $gy.getUa()
-  console.log(ua)
+function getRuntimeEnv () {
+  const env = $gy.getRuntimeEnv()
+  console.log(env)
 }
 
 function getUrlParams () {
@@ -102,7 +102,7 @@ function navigateTo () {
     web: '//m.example.cn/#/login'
   }
   $gy.navigateTo({
-    url: urlConfig[$gy.UA.type]
+    url: urlConfig[$gy.ENV.type]
   })
 }
 
@@ -113,7 +113,7 @@ function redirectTo () {
     web: '//m.example.cn/#/login'
   }
   $gy.redirectTo({
-    url: urlConfig[$gy.UA.type]
+    url: urlConfig[$gy.ENV.type]
   })
 }
 
@@ -124,7 +124,7 @@ function reLaunch () {
     web: '//m.example.cn/#/login'
   }
   $gy.reLaunch({
-    url: urlConfig[$gy.UA.type]
+    url: urlConfig[$gy.ENV.type]
   })
 }
 
@@ -135,7 +135,7 @@ function switchTab () {
     web: '//m.example.cn/#/login'
   }
   $gy.switchTab({
-    url: urlConfig[$gy.UA.type]
+    url: urlConfig[$gy.ENV.type]
   })
 }
 
