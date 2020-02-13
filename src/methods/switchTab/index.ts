@@ -5,7 +5,7 @@ import alipay from './index.alipay'
 
 export default function (params: InterfaceConfig) {
   const win:any = window
-  const { ENV } = win.$gy
+  const { ENV } = win.$gpy
   const { clientType } = ENV
 
   if (clientType === 'weapp') {

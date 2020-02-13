@@ -14,7 +14,7 @@ import redirectTo from './methods/redirectTo'
 import reLaunch from './methods/reLaunch'
 import removeStorage from './methods/removeStorage'
 import setStorage from './methods/setStorage'
-import setTitle from './methods/setTitle'
+import setPageTitle from './methods/setPageTitle'
 import switchTab from './methods/switchTab'
 
 export const VERSION: string = require('../package.json').version
@@ -37,7 +37,7 @@ const fn = {
   reLaunch,
   removeStorage,
   setStorage,
-  setTitle,
+  setPageTitle,
   switchTab
 }
 
@@ -48,7 +48,7 @@ const API = {
 }
 
 const win: any = window
-win.$gy = API
+win.$gpy = API
 
 export {
   chooseImage,
@@ -67,6 +67,6 @@ export {
   reLaunch,
   removeStorage,
   setStorage,
-  setTitle,
+  setPageTitle,
   switchTab
 }

@@ -1,21 +1,21 @@
 new VConsole()
 
-console.log($gy)
+console.log($gpy)
 
 function clearStorage () {
-  $gy.clearStorage()
+  $gpy.clearStorage()
 }
 
 function getRef () {
-  $gy.getRef()
+  $gpy.getRef()
 }
 
 function getRuntimeEnv () {
-  $gy.getRuntimeEnv()
+  $gpy.getRuntimeEnv()
 }
 
 function getStorage () {
-  $gy.getStorage({
+  $gpy.getStorage({
     key: 'userName',
     success: function (res) {
       console.log(res)
@@ -24,26 +24,26 @@ function getStorage () {
 }
 
 function getRuntimeEnv () {
-  const env = $gy.getRuntimeEnv()
+  const env = $gpy.getRuntimeEnv()
   console.log(env)
 }
 
 function getUrlParams () {
-  console.log($gy.getUrlParams())
+  console.log($gpy.getUrlParams())
 }
 
 function getUserToken () {
-  console.log($gy.getUserToken())
+  console.log($gpy.getUserToken())
 }
 
 function postMessage () {
-  $gy.postMessage({
+  $gpy.postMessage({
     data: { foo: 'bar' }
   })
 }
 
 function removeStorage () {
-  $gy.removeStorage({
+  $gpy.removeStorage({
     key: 'userName',
     success: function () {
       console.log('remove success!')
@@ -52,20 +52,20 @@ function removeStorage () {
 }
 
 function setStorage () {
-  $gy.setStorage({
+  $gpy.setStorage({
     key: 'userName',
     data: 'Peter.Chan'
   })
 }
 
-function setTitle () {
-  $gy.setTitle({
+function setPageTitle () {
+  $gpy.setPageTitle({
     title: '测试页面'
   })
 }
 
 function getLocation () {
-  $gy.getLocation({
+  $gpy.getLocation({
     success: function (res) {
       console.log(res)
     },
@@ -76,7 +76,7 @@ function getLocation () {
 }
 
 function openLocation () {
-  $gy.openLocation({
+  $gpy.openLocation({
     latitude: '9999999',
     longitude: '9999999',
     name: '深圳市民中心',
@@ -90,7 +90,7 @@ function openLocation () {
 }
 
 function navigateBack () {
-  $gy.navigateBack({
+  $gpy.navigateBack({
     delta: 2
   })
 }
@@ -101,8 +101,8 @@ function navigateTo () {
     app: '01',
     web: '//m.example.cn/#/login'
   }
-  $gy.navigateTo({
-    url: urlConfig[$gy.ENV.type]
+  $gpy.navigateTo({
+    url: urlConfig[$gpy.ENV.type]
   })
 }
 
@@ -112,8 +112,8 @@ function redirectTo () {
     app: '01',
     web: '//m.example.cn/#/login'
   }
-  $gy.redirectTo({
-    url: urlConfig[$gy.ENV.type]
+  $gpy.redirectTo({
+    url: urlConfig[$gpy.ENV.type]
   })
 }
 
@@ -123,8 +123,8 @@ function reLaunch () {
     app: '01',
     web: '//m.example.cn/#/login'
   }
-  $gy.reLaunch({
-    url: urlConfig[$gy.ENV.type]
+  $gpy.reLaunch({
+    url: urlConfig[$gpy.ENV.type]
   })
 }
 
@@ -134,17 +134,17 @@ function switchTab () {
     app: '01',
     web: '//m.example.cn/#/login'
   }
-  $gy.switchTab({
-    url: urlConfig[$gy.ENV.type]
+  $gpy.switchTab({
+    url: urlConfig[$gpy.ENV.type]
   })
 }
 
 function toLogin () {
-  $gy.toLogin()
+  $gpy.toLogin()
 }
 
 function chooseImage () {
-  $gy.chooseImage({
+  $gpy.chooseImage({
     success: function (res) {
       console.log(res)
     }
@@ -152,7 +152,7 @@ function chooseImage () {
 }
 
 function getNetworkType () {
-  $gy.getNetworkType({
+  $gpy.getNetworkType({
     success: function (res) {
       console.log(res)
     }
@@ -160,7 +160,7 @@ function getNetworkType () {
 }
 
 function previewImage () {
-  $gy.previewImage({
+  $gpy.previewImage({
     success: function (res) {
       console.log(res)
     }
@@ -168,7 +168,7 @@ function previewImage () {
 }
 
 function scanCode () {
-  $gy.scanCode({
+  $gpy.scanCode({
     success: function (res) {
       console.log(res)
     }
@@ -176,7 +176,7 @@ function scanCode () {
 }
 
 function share() {
-  $gy.share({
+  $gpy.share({
     title: 'Guppy JS-SDK Test',
     desc: '测试分享功能',
     link: 'https://m.example.cn',

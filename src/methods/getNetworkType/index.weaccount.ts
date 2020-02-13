@@ -1,10 +1,12 @@
 import InterfaceConfig from './interface'
 
 export default function (params: InterfaceConfig) {
-  const { url } = params
+  const win: any = window
 
   try {
-    location.replace(url)
+    win.wx.getNetworkType({
+      ...params
+    })
   } catch (err) {
     console.error(err)
   }

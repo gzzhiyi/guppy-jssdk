@@ -7,7 +7,7 @@ import alipaylife from './index.alipaylife'
 
 export default function () {
   const win:any = window
-  const { ENV } = win.$gy
+  const { ENV } = win.$gpy
   const { clientType } = ENV
 
   if (clientType === 'web') {
