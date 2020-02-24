@@ -1,3 +1,3 @@
 # Guppy JS-SDK
 
-> [API 文档](http://www.hezhiyi.com/guppy/docs/jssdk/guide/start.html)
+> [使用文档](http://www.hezhiyi.com/guppy/docs/jssdk/guide/start.html)

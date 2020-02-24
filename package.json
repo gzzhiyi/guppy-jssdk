@@ -1,10 +1,17 @@
 {
   "name": "guppy-jssdk",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Stanley.he",
   "license": "MIT",
   "main": "dist/guppy_jssdk.min.js",
   "description": "Guppy JS-SDK",
+  "keywords": [
+    "wechat",
+    "weixin",
+    "alipay",
+    "jssdk",
+    "mini program"
+  ],
   "private": false,
   "scripts": {
     "dev": "webpack-dev-server --colors --profile --config ./build/webpack.dev.conf.js",
@@ -34,5 +41,5 @@
     "webpack-hot-middleware": "^2.24.3",
     "webpack-merge": "^4.1.2"
   },
-  "homepage": ""
+  "homepage": "http://www.hezhiyi.com/guppy/docs/jssdk/guide/start.html"
 }
